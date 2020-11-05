@@ -1,2 +1,2 @@
 #!/bin/bash
-java -Xmx1024M -Xms1024M -jar minecraft_server*.jar nogui
+java -Xmx2536M -Xms2536M -jar minecraft_server*.jar nogui
