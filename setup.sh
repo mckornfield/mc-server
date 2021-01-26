@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get install openjdk-8-jdk unzip zip -y
+apt-get install curl openjdk-8-jdk unzip zip -y
 live_dir=/opt/mc-live-server
 mkdir -p $live_dir
 ln -s /opt/mc-server/run_server.sh ${live_dir}/run_server.sh
