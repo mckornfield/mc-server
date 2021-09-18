@@ -1,2 +1,3 @@
 #!/bin/bash
-ssh root@$(cat hosts) screen -dmS mc-server (cd /opt/live-server && /opt/mc-live-server/run_server.sh)
+cd /opt/mc-live-server/
+screen -dmS mc-server /opt/mc-live-server/run_server.sh
