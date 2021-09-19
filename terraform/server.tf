@@ -1,5 +1,5 @@
 resource "digitalocean_droplet" "mc_server" {
-  image  = "ubuntu-18-04-x64"
+  image  = "debian-10-x64"
   name   = "mc"
   region = "sfo3"
   size   = "s-2vcpu-4gb"
