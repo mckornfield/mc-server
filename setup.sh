@@ -8,7 +8,7 @@ apt install ./jdk-17_linux-x64_bin.deb -y
 echo "source /etc/profile.d/jdk.sh" >> ~/.bash_profile
 live_dir=/opt/mc-live-server
 mkdir -p $live_dir
-ln -s /opt/mc-server/run_server.sh ${live_dir}/run_server.sh
+ln -sf /opt/mc-server/run_server.sh ${live_dir}/run_server.sh
 pushd $live_dir
 echo "eula=true" > eula.txt
 curl -o ${live_dir}/minecraft_server.1.17.1.jar https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar
