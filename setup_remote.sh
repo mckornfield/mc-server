@@ -1,5 +1,7 @@
 #!/bin/bash
 host=$(cat ${PWD}/hosts)
+ssh -A root@${host} "apt update"
+ssh -A root@${host} "apt install git -y"
 ssh -A root@${host} "export GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no' && mkdir -p /opt/ && cd /opt && [ -d "/opt/mc-server" ] && git -C mc-server pull ||  git clone https://github.com/mckornfield/mc-server.git"
 ssh -A root@${host} "/opt/mc-server/setup.sh"
 # if ls avatar.zip 1> /dev/null 2>&1; then
