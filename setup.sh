@@ -5,7 +5,8 @@ apt install curl unzip zip -y
 # https://download.java.net/java/GA/jdk17/0d483333a00540d886896bac774ff48b/35/GPL/openjdk-17_linux-x64_bin.tar.gz
 wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb
 apt install ./jdk-17_linux-x64_bin.deb -y
-echo "source /etc/profile.d/jdk.sh" >> ~/.bashrc
+echo 'export PATH="$PATH:/usr/lib/jvm/jdk-17/bin/"' >> ~/.bashrc
+echo 'export JAVA_HOME=/usr/lib/jvm/jdk-17/' >> ~/.bashrc
 live_dir=/opt/mc-live-server
 mkdir -p $live_dir
 ln -sf /opt/mc-server/run_server.sh ${live_dir}/run_server.sh
