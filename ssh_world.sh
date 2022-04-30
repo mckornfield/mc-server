@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh -o UserKnownHostsFile=/dev/null root@$(cat hosts)
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@$(cat hosts)
