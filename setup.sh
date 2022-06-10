@@ -12,4 +12,4 @@ mkdir -p $live_dir
 ln -sf /opt/mc-server/run_server.sh ${live_dir}/run_server.sh
 pushd $live_dir
 echo "eula=true" > eula.txt
-curl -o ${live_dir}/minecraft_server.1.18.2.jar https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
+curl -o ${live_dir}/minecraft_server.1.19.jar https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
